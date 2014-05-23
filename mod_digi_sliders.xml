@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site">
+	<name>Digi Sliders</name> 
+    <creationDate>2014-01-30</creationDate>
+    <copyright>Copyright (C) 2012. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Alexander Sklepas</author>
+    <authorEmail>a.sklepas@digi-web.gr</authorEmail>
+    <authorUrl>http://www.digi-web.gr</authorUrl>
+    <version>1.0.1</version>
+	<files>
+		<filename module="mod_digi_sliders">mod_digi_sliders.php</filename>
+		<filename>index.html</filename>
+		<filename>LICENCE.txt</filename>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>css</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_digi_sliders.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+			<field name="jQuery" type="list" default="1" label="MOD_DIGI_SLIDERS_JQUERY_LABEL" description="MOD_DIGI_SLIDERS_JQUERY_DESC">
+				<option value="1">JENABLED</option>
+				<option value="0">JDISABLED</option>
+			</field>
+			<field name="ishidden" type="list" default="0" label="MOD_DIGI_SLIDERS_HIDDEN_LABEL" description="MOD_DIGI_SLIDERS_HIDDEN_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="direction" type="list" default="1" label="MOD_DIGI_SLIDERS_DIRECTION_LABEL" description="MOD_DIGI_SLIDERS_DIRECTION_DESC">
+				<option value="1">MOD_DIGI_SLIDERS_LEFT</option>
+				<option value="2">MOD_DIGI_SLIDERS_RIGHT</option>
+			</field>
+			<field name="imagename" type="media" directory="images" label="MOD_DIGI_SLIDERS_IMAGE_LABEL" description="MOD_DIGI_SLIDERS_IMAGE_DESC" />
+			<field name="imagetext" type="textarea" rows="2" cols="20" default="" label="MOD_DIGI_SLIDERS_IMAGETEXT_LABEL" description="MOD_DIGI_SLIDERS_IMAGETEXT_DESC" />
+			<field name="width" type="text" default="250" label="MOD_DIGI_SLIDERS_LEFT_LABEL" description="MOD_DIGI_SLIDERS_LEFT_DESC" />
+			<field name="height" type="text" default="200" label="MOD_DIGI_SLIDERS_HEIGHT_LABEL" description="MOD_DIGI_SLIDERS_HEIGHT_DESC" />
+			<field name="top" type="text" default="0" label="MOD_DIGI_SLIDERS_TOP_LABEL" description="MOD_DIGI_SLIDERS_TOP_DESC" />
+			<field name="fadeout" type="text" default="1500" label="MOD_DIGI_SLIDERS_FADEIN_LABEL" description="MOD_DIGI_SLIDERS_FADEIN_DESC" />
+			<field name="fadein" type="text" default="500" label="MOD_DIGI_SLIDERS_FADEOUT_LABEL" description="MOD_DIGI_SLIDERS_FADEOUT_DESC" />
+			<field name="content" type="editor" filter="raw" default="" label="MOD_DIGI_SLIDERS_CONTENT_LABEL" description="MOD_DIGI_SLIDERS_CONTENT_DESC" />
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Sets the Modules Class" />
+		</fieldset>
+		</fields>
+	</config>
+</extension>

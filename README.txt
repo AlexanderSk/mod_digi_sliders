@@ -1,0 +1,1 @@
+Digi Sliders Module may be used to display sliding boxes either left or right of a Joomla website.

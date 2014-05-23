@@ -1,0 +1,13 @@
+@charset "utf-8";
+img{ border:none;}
+.absolute{ position:absolute;}
+.clear { clear: both; }
+.border{-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.5);-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.5);box-shadow:1px 1px 2px rgba(0,0,0,0.5); -o-border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.box_slide_holder{ position:relative;}
+.box_slide {-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border: 1px solid #999;background: rgba(255, 255, 255, 0.4);position: fixed;z-index: 10000;
+-pie-background: rgba(255,255,255,0.4)!important; behavior: url(/PIE.php);}
+.box_slide:hover{cursor:pointer;}
+.box_slide .box_text h2{vertical-align: middle;	color:#FFF;	font-size:24px;	text-align:center;line-height:40px;}
+.box_slide .box_image{position: absolute;top:0px;cursor: pointer;border: 0;}
+.box_image div{	position:absolute;width:100px;height:30px;display:block;}
+.box_image div span{display:block;text-align:center;margin:0;line-height:25px;}
